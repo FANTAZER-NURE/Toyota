@@ -3,6 +3,15 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  color: #fff;
+}
+
+body {
+  background: linear-gradient(#000 100%, #00265e 100%, #002d71 100%, #002d71 100%, #000 100%);
+}
+
+a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=normalize.css.map */

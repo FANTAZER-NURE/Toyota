@@ -1,0 +1,89 @@
+.header {
+  padding: 30px 20px;
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .header__nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 639px) {
+  .header__nav {
+    display: none;
+  }
+}
+.header__nav-item {
+  padding: 0 40px;
+  border-right: 1px solid #fff;
+  height: 110px;
+  flex-basis: 25%;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+.header__nav-item:hover {
+  color: #0a449d;
+}
+.header__nav-item:last-child {
+  border-right: none;
+}
+.header__label {
+  height: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  box-shadow: inset 69.0333px -69.0333px 69.0333px rgba(165, 165, 165, 0.075), inset -69.0333px 69.0333px 69.0333px rgba(255, 255, 255, 0.075);
+  padding: 0 10px;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid transparent;
+}
+.header__label:hover {
+  border: 2px solid #105bcc;
+}
+@media screen and (min-width: 1000px) and (max-width: 1399px) {
+  .header__label {
+    display: none;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .header__label {
+    display: none;
+  }
+}
+.header__input {
+  outline: none;
+  color: #0a449d;
+  border: none;
+  background-color: #d9d9d9;
+  box-shadow: inset 69.0333px -69.0333px 69.0333px rgba(165, 165, 165, 0.075), inset -69.0333px 69.0333px 69.0333px rgba(255, 255, 255, 0.075);
+  padding: 0 0 0 10px;
+  border-right: 1px solid #fff;
+  width: 85%;
+  height: 80%;
+}
+.header__path {
+  transition: all 0.2s ease-in-out;
+}
+.header__button {
+  padding: 0 5px 0 10px;
+}
+.header__button:hover .header__path {
+  stroke: #105bcc;
+}
+
+/*# sourceMappingURL=header.css.map */

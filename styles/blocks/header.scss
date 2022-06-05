@@ -1,0 +1,101 @@
+@import "../utils/mixins.scss";
+@import "../utils/vars.scss";
+
+.header {
+
+  padding: 30px 20px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+
+    @include tablet {
+      display: none;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__nav-item {
+    padding: 0 40px;
+    border-right: 1px solid #fff;
+    height: 110px;
+    flex-basis: 25%;
+    display: flex;
+    align-items: center;
+    transition: $transition;
+
+    &:hover {
+      color: #0a449d;
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  &__label {
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    box-shadow: inset 69.0333px -69.0333px 69.0333px rgba(165, 165, 165, 0.075), inset -69.0333px 69.0333px 69.0333px rgba(255, 255, 255, 0.075);
+    padding: 0 10px;
+    transition: $transition;
+    border: 2px solid transparent;
+
+
+    &:hover {
+      border: 2px solid #105bcc;
+    }
+
+    @include laptop {
+      display: none;
+    }
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__input {
+    outline: none;
+    color: #0a449d;
+    border: none;
+    background-color: #d9d9d9;
+    box-shadow: inset 69.0333px -69.0333px 69.0333px rgba(165, 165, 165, 0.075), inset -69.0333px 69.0333px 69.0333px rgba(255, 255, 255, 0.075);
+    padding: 0 0 0 10px;
+    border-right: 1px solid #fff;
+    width: 85%;
+    height: 80%;
+  }
+
+  &__path {
+    transition: $transition;
+  }
+
+  &__button {
+    padding: 0 5px 0 10px;
+
+    &:hover .header__path {
+      stroke: #105bcc;
+    }
+  }
+
+  
+}

@@ -1,0 +1,9 @@
+@import "../utils/vars.scss";
+@import "../utils/mixins.scss";
+
+.page {
+
+  &--menu {
+    position: fixed;
+  }
+}

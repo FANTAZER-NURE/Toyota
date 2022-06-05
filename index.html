@@ -5,9 +5,88 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="icon" href="./images/tu-concesionario-toyota-en-alzira-toyota-logo-for-presentation-1673359 1.svg">
   <title>Toyota</title>
 </head>
 <body>
-  Toyota landing
+  <header class="header">
+    <div class="container grid">
+      <div class="header__top grid__item grid__item--2-11">
+        <a href="#" class="header__link">
+          <img src="./images/tu-concesionario-toyota-en-alzira-toyota-logo-for-presentation-1673359 1.svg" alt="" class="header__logo">
+        </a>
+
+        <nav class="header__nav">
+          <a href="#" class="header__nav-item">Models</a>
+          <a href="#" class="header__nav-item">Buy online</a>
+          <a href="#" class="header__nav-item">Service and accessories</a>
+          <a href="#" class="header__nav-item">Сontacts</a>
+        </nav>
+
+        <label for="search" class="header__label">
+          <input type="text" class="header__input" id="search">
+          <a href="#" class="header__button">
+            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle class="header__path" cx="7.61113" cy="7.27776" r="5.44444" stroke="white" stroke-width="3"/>
+              <line class="header__path" x1="13.4952" y1="12" x2="17.3334" y2="15.8382" stroke="white" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+          </a>
+        </label>
+
+        <div class="header__menu menu menu--mobile grid__item grid__item--4-5" id="menu-container">
+
+          <a id="header-burger" class="menu__btn">
+            <span></span>
+          </a>
+
+          <ul class="menu__box">
+
+            <li>
+              <a
+                class="menu__item header__link bodytext"
+                href="#products"
+                id="item1"
+              >
+              Models
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="menu__item header__link bodytext"
+                href="#about"
+                id="item2"
+              >
+              Buy online
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="menu__item header__link bodytext"
+                href="#blog"
+                id="item3"
+              >
+              Service and accessories
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#contact"
+                class="header__link bodytext"
+                id="item4"
+              >
+                Contact
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <script type="text/javascript" src="scripts/script.js"></script>
 </body>
 </html>
